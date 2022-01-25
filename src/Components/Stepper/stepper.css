@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.icons {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 2;
+}
+
+.icons img {
+    height: 40px;
+    margin: 8px;
+    background-color: transparent;
+}
+
+.line,
+.underline {
+    position: absolute;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.line {
+    z-index: 1;
+    width: 0%;
+    background: linear-gradient(to right, #ff8878, #ff3939);
+    transition: width 0.4s ease-in-out;
+}
+
+.underline {
+    position: absolute;
+    width: 100%;
+    background: #fff4c3;
+}
+
+@keyframes slidein {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
